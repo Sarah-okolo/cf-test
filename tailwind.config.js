@@ -7,21 +7,25 @@ export default {
   ],
   theme: {
   	extend: {
+			screens: {
+				larger: '376px', // screens 376px and above
+			},
   		colors: {
-  			green: {
+  			Green: {
   				'200': 'hsl(148, 38%, 91%)',
-  				'600': 'hsl(169, 82%, 27%)'
+  				'600': 'hsl(169, 82%, 27%)',
+					'900' : 'hsl(169, 82%, 14%)'
   			},
-  			red: 'hsl(0, 66%, 54%)',
-  			neutral: {
-  				white: 'hsl(0, 0%, 100%)',
-  				gray: {
+  			Red: 'hsl(0, 66%, 54%)',
+  			Neutral: {
+  				White: 'hsl(0, 0%, 100%)',
+  				Gray: {
   					'500': 'hsl(186, 15%, 59%)',
   					'900': 'hsl(187, 24%, 22%)'
   				}
   			},
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
+  			Background: 'hsl(var(--background))',
+  			Foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
