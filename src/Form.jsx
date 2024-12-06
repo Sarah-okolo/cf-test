@@ -40,7 +40,7 @@ function Form() {
 
   return (
     <>
-      <div className='bg-Neutral-White w-full max-w-[736px] my-0 mx-auto p-8 rounded-lg text-Neutral-Gray-900/95'>
+      <div className='bg-Neutral-White w-full max-w-[736px] my-0 mx-auto p-9 rounded-lg text-Neutral-Gray-900/95'>
         <h1 className='text-Green-900 font-bold text-3xl mb-9'>Contact Us</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='md:flex md:justify-between md:gap-5'>
@@ -129,7 +129,7 @@ function Form() {
             triggerValidation={trigger}
           />
           
-          <Button size='full' disabled={isSubmitting || isSubmitted} type='submit' className={`mt-5 text-md ${isSubmitting || isSubmitted ? 'cursor-not-allowed' : 'cursor-pointer'}`}>{ isSubmitting ? 'Submitting...' : 'Submit' }</Button>
+          <Button size='full' disabled={isSubmitting || isSubmitted} type='submit' className={`mt-5 text-md text-white ${isSubmitting || isSubmitted ? 'cursor-not-allowed' : 'cursor-pointer'}`}>{ isSubmitting ? 'Submitting...' : 'Submit' }</Button>
         </form>
 
         {
