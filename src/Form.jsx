@@ -41,6 +41,7 @@ function Form() {
   return (
     <>
       <div className='bg-Neutral-White w-full max-w-[736px] my-0 mx-auto px-8 py-14 rounded-lg'>
+        <h1 className='text-Green-900 font-bold text-3xl mb-9'>Contact Us</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='md:flex md:justify-between md:gap-5'>
             <InputField
