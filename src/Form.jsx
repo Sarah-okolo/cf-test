@@ -40,7 +40,7 @@ function Form() {
 
   return (
     <>
-      <div className='bg-Neutral-White w-full max-w-[736px] my-0 mx-auto px-8 py-14 rounded-lg text-Neutral-Gray-900/95'>
+      <div className='bg-Neutral-White w-full max-w-[736px] my-0 mx-auto p-8 rounded-lg text-Neutral-Gray-900/95'>
         <h1 className='text-Green-900 font-bold text-3xl mb-9'>Contact Us</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='md:flex md:justify-between md:gap-5'>
@@ -52,7 +52,7 @@ function Form() {
               labelExtra={<span className="text-Green-600">*</span>}
               labelClass='block'
               placeholder='John'
-              customClass='w-full px-4 py-2 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
+              customClass='w-full px-4 py-3 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
               registerInput={register('firstName')}
               errMsg={errors.firstName?.message}
               hasError={!!errors.firstName}
@@ -67,7 +67,7 @@ function Form() {
               labelExtra={<span className="text-Green-600">*</span>}
               labelClass='block'
               placeholder='Doe'
-              customClass='w-full px-4 py-2 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
+              customClass='w-full px-4 py-3 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
               registerInput={register('lastName')}
               errMsg={errors.lastName?.message}
               hasError={!!errors.lastName}
@@ -81,7 +81,7 @@ function Form() {
             labelFor='email'
             labelExtra={<span className="text-Green-600">*</span>}
             placeholder='johndoe@email.com'
-            customClass='w-full px-4 py-2 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
+            customClass='w-full px-4 py-3 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
             registerInput={register('email')}
             errMsg={errors.email?.message}
             hasError={!!errors.email}
@@ -109,7 +109,7 @@ function Form() {
             labelFor='message'
             labelExtra={<span className="text-Green-600">*</span>}
             placeholder='Enter your message here'
-            customClass='w-full h-20 resize-none px-4 py-2 mt-2 mb-0 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
+            customClass='w-full h-24 resize-none px-4 py-2 mt-2 mb-0 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
             registerInput={register('message')}
             errMsg={errors.message?.message}
             hasError={!!errors.message}
