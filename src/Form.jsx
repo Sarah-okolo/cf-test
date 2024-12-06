@@ -129,7 +129,7 @@ function Form() {
             triggerValidation={trigger}
           />
           
-          <Button size='full' disabled={isSubmitting || isSubmitted} type='submit' className={`mt-5 ${isSubmitting || isSubmitted ? 'cursor-not-allowed' : 'cursor-pointer'}`}>{ isSubmitting ? 'Submitting...' : 'Submit' }</Button>
+          <Button size='full' disabled={isSubmitting || isSubmitted} type='submit' className={`mt-5 text-md ${isSubmitting || isSubmitted ? 'cursor-not-allowed' : 'cursor-pointer'}`}>{ isSubmitting ? 'Submitting...' : 'Submit' }</Button>
         </form>
 
         {
