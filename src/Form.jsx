@@ -40,15 +40,17 @@ function Form() {
 
   return (
     <>
-      <div className='bg-Neutral-White w-full max-w-[736px] my-0 mx-auto px-8 py-14 rounded-lg'>
+      <div className='bg-Neutral-White w-full max-w-[736px] my-0 mx-auto px-8 py-14 rounded-lg text-Neutral-Gray-900/95'>
         <h1 className='text-Green-900 font-bold text-3xl mb-9'>Contact Us</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='md:flex md:justify-between md:gap-5'>
             <InputField
               type='text'
+              wrapperClass='md:w-1/2'
               label='First Name'
               labelFor='firstName'
               labelExtra={<span className="text-Green-600">*</span>}
+              labelClass='block'
               placeholder='John'
               customClass='w-full px-4 py-2 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
               registerInput={register('firstName')}
@@ -59,9 +61,11 @@ function Form() {
 
             <InputField
               type='text'
+              wrapperClass='md:w-1/2'
               label='Last Name'
               labelFor='lastName'
               labelExtra={<span className="text-Green-600">*</span>}
+              labelClass='block'
               placeholder='Doe'
               customClass='w-full px-4 py-2 my-2 outline-none border border-Neutral-Gray-500 rounded-md focus:border-2 focus:border-Green-600 hover:border-Green-600'
               registerInput={register('lastName')}
@@ -89,7 +93,7 @@ function Form() {
             label='Query Type'
             labelFor='queryType'
             labelExtra={<span className="text-Green-600">*</span>}
-            customClass='md:flex md:justify-between md:gap-5 my-2'
+            customClass=' my-2 gap-4 md:flex md:justify-between md:gap-5'
             subLabel={['General Enquiry', 'Support Request']}
             subLabelCustomClass='p-3 w-full border border-Neutral-Gray-500 rounded-md cursor-pointer hover:border-Green-600'
             groupInputs={['option 1', 'option 2']}

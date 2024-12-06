@@ -4,7 +4,7 @@ import { RadioGroup, RadioGroupItem } from "./radio-group"
 
 
 function InputField(props) {
-  const { label, labelExtra, labelFor, labelClass, placeholder, type, customClass,
+  const { wrapperClass, label, labelExtra, labelFor, labelClass, placeholder, type, customClass,
           errMsg, hasError, registerInput, fieldErrorStyle, focusActiveStyle,
           groupName, groupInputs, registerControl, triggerValidation,
           subLabel, subLabelExtra, subLabelCustomClass,
@@ -14,7 +14,7 @@ function InputField(props) {
   
   return (
     <>
-      <div className="mb-5">
+      <div className={`mb-5 ${wrapperClass}`}>
         { label && <label htmlFor={labelFor} className={labelClass}>{label} {labelExtra}</label> }
         {
         type === 'text' || type === 'number' || type === 'email' || type === 'password' ?
