@@ -59,3 +59,10 @@
     --chart-5: 340 75% 55%
   }
 }
+
+
+@layer utilities {
+  .text-last-right {
+    text-align-last: right;
+  }
+}
